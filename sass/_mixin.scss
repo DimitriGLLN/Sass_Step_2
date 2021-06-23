@@ -1,0 +1,7 @@
+@mixin cardmixin {
+    width:$width;
+    box-shadow: 0 0 1rem rgba(0,0,0,.5);
+    border-radius: 12px;
+    margin: auto;
+    min-height:60rem;
+}

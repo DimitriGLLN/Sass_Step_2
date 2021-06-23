@@ -1,0 +1,199 @@
+html {
+  font-size: 0.625em;
+  /* fallback IE8+ */
+  font-size: calc(1em * .625);
+  /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+}
+
+/* Remove focus for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Set core body defaults */
+body {
+  font-size: 1.6rem;
+}
+
+/* Set text selection */
+::-moz-selection {
+  color: #000;
+  background-color: #fd0;
+}
+
+::selection {
+  color: #000;
+  background-color: #fd0;
+}
+
+/* Remove default padding */
+ul[role=list],
+ol[role=list] {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set cursor pointer */
+label[for],
+button,
+input[type=submit],
+select {
+  cursor: pointer;
+}
+
+/* Remove font style on address */
+address {
+  font-style: normal;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+/* Image replacement technique 2012 H5BP  - https://css-tricks.com/the-image-replacement-museum/ */
+.ir {
+  font: 0/0 a;
+  color: transparent;
+  border: 0;
+  text-shadow: none;
+}
+
+/* Print external URLs */
+@media print {
+  a {
+    text-decoration: underline;
+  }
+
+  a[href]:not([href^="#"])::after {
+    content: "(" attr(href) ")";
+  }
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.card {
+  width: 40rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin: auto;
+  min-height: 60rem;
+}
+
+.card-img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.card-title {
+  font-family: sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-link {
+  align-self: flex-start;
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  background-color: #5a9920;
+  color: #fff;
+  border-radius: 1rem;
+  transition: 0.3s;
+  margin-top: 2rem;
+}
+.card-link:hover, .card-link:focus {
+  background-color: #5a9920;
+  color: #fff;
+}
+
+body {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
