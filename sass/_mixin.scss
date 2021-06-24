@@ -1,7 +1,42 @@
-@mixin cardmixin {
-    width:$width;
+@mixin cardmixin ($cardwidth : $width, $color : $color-font, $background : $color-background) {
+    width:$cardwidth;
     box-shadow: 0 0 1rem rgba(0,0,0,.5);
     border-radius: 12px;
     margin: auto;
     min-height:60rem;
+    .card-img {
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        
+    }
+    .card-title {
+        font-family: sans-serif;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .card-link {
+        align-self: flex-start;
+        display: inline-block;
+        padding: 1rem;
+        text-decoration: none;
+        background-color: $background;
+        border: .1rem solid $background;
+        color: $color;
+        border-radius: 1rem;
+        transition: .3s;
+        margin-top: 2rem;
+        &:hover,
+        &:focus {
+            background-color:$color;
+            color:  $background;
+        }
+    }
 }
